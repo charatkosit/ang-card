@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TdkExampleComponent } from './tdk-example/tdk-example.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TdkExampleComponent
   ],
   imports: [
     BrowserModule,

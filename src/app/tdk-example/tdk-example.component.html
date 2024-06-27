@@ -1,0 +1,216 @@
+<div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <div class="container" id="navbar12">
+          <div class="row align-items-center text-center">
+            <div class="col-2">
+              <img class="Logo_Images" src="assets/images/Logo_RD_Yellow1-164x45.png">
+            </div>
+            <div class="col-7">
+              <a class="txtHeader nav-link text-light" style=" font-weight: bold;">TDKW Example Page V 1.1.0</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="row gx-5 my-1">
+        <div class="col-lg-8">
+          <div id="myProgress" style="width: 100%">
+            <div #myBar style="height: 15px; background-color: rgb(10, 206, 241); font-size: 70%; text-align: right; width: 0%;">
+              <label #lbBar class="TextInput" style="font-weight: bold; color:rgb(255, 255, 255);"></label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h5 class="my-0" style="font-weight: bold; color: rgb(17, 188, 231);">Photo</h5>
+            </div>
+            <div class="col" style="text-align: right">
+              <label #readingTime class="TextInput" style="font-weight: bold"></label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2">
+              <div class="col-sm-2">
+                <img #photo id="Photo" src="assets/images/PNIDCard.JPG" width="81" height="97">
+              </div>
+            </div>
+            <div class="col my-2">
+              <div>
+                <label #socketMessage class="TextInput" style="font-weight: bold"></label>
+              </div>
+              <div>
+                <label #readerSelected class="TextInput" style="font-weight: bold"></label>
+              </div>
+              <div>
+                <label #physicalAddress class="TextInput" style="font-weight: bold"></label>
+              </div>
+            </div>
+          </div>
+          <form class="needs-validation" novalidate="">
+            <div class="row g-0 gx-3">
+              <hr class="my-2">
+              <h5 class="my-0" style="font-weight: bold; color: rgb(17, 188, 231);">Text</h5>
+              <div class="col-sm-4 gy-1">
+                <label for="firstName_T" class="form-label my-0">First Name (Thai)</label>
+                <input #firstNameT type="text" class="form-control" style="height: 25px">
+              </div>
+              <div class="col-sm-4 gy-1">
+                <label for="MiddleName_T" class="form-label my-0">Middle Name (Thai)</label>
+                <input #middleNameT type="text" class="form-control" style="height: 25px">
+              </div>
+              <div class="col-sm-4 gy-1">
+                <label for="lastName_T" class="form-label my-0">Last Name (Thai)</label>
+                <input #lastNameT type="text" class="form-control" style="height: 25px">
+              </div>
+              <div class="col-sm-4 gy-1">
+                <label for="firstName_E" class="form-label my-0">First Name (English)</label>
+                <input #firstNameE type="text" class="form-control" style="height: 25px">
+              </div>
+              <div class="col-sm-4 gy-1">
+                <label for="MiddleName_E" class="form-label my-0">Middle Name (English)</label>
+                <input #middleNameE type="text" class="form-control" style="height: 25px">
+              </div>
+              <div class="col-sm-4 gy-1">
+                <label for="lastName_E" class="form-label my-0">Last Name (English)</label>
+                <input #lastNameE type="text" class="form-control" style="height: 25px">
+              </div>
+              <div class="col-sm-4 gy-1">
+                <label for="gender" class="form-label my-0">Gender</label>
+                <input #gender type="text" class="form-control" style="height: 25px">
+              </div>
+              <div class="col-sm-4 gy-1">
+                <label for="birthdate" class="form-label my-0">Date of Birth</label>
+                <input #birthDate type="text" class="form-control" style="height: 25px">
+              </div>
+              <div class="col-sm-4 gy-1">
+                <label for="nidnum" class="form-label my-0">Identification Number</label>
+                <input #nidNum type="text" class="form-control" style="height: 25px">
+              </div>
+              <div class="col-12 gy-1">
+                <label for="addressArea" class="form-label my-0">Address</label>
+                <div class="input-group has-validation">
+                  <textarea #address class="form-control my-0" rows="3"></textarea>
+                </div>
+              </div>
+              <div class="col-sm-4 gy-1">
+                <label for="Idate" class="form-label my-0">Date of Issue</label>
+                <input #issueDate type="text" class="form-control" style="height: 25px">
+              </div>
+              <div class="col-sm-4 gy-1">
+                <label for="Edate" class="form-label my-0">Date of Expiry</label>
+                <input #expireDate type="text" class="form-control" style="height: 25px">
+              </div>
+              <div class="col-sm-4 gy-1">
+                <label for="IssueNum" class="form-label my-0">Issue Number</label>
+                <input #issueNum type="text" class="form-control" style="height: 25px">
+              </div>
+              <div class="col-12 gy-1">
+                <label for="IPlace" class="form-label my-0">Place of Issue</label>
+                <input #placeOfIssue type="text" class="form-control" style="height: 25px">
+              </div>
+              <hr class="my-2">
+              <h5 class="my-0" style="font-weight: bold; color: rgb(17, 188, 231);">AText</h5>
+              <div class="col-sm-4 gy-1">
+                <label for="bp1RequestNumber" class="form-label my-0">BP1/Request Number</label>
+                <input #bp1RequestNumber type="text" class="form-control" style="height: 25px">
+              </div>
+              <div class="col-sm-4 gy-1">
+                <label for="issuerCode" class="form-label my-0">Issuer Code</label>
+                <input #issuerCode type="text" class="form-control" style="height: 25px">
+              </div>
+              <div class="col-sm-4 gy-1">
+                <label for="structureVersion" class="form-label my-0">Structure Version</label>
+                <input #structureVersion type="text" class="form-control" style="height: 25px">
+              </div>
+              <div class="col-sm-4 gy-1">
+                <label for="cardType" class="form-label my-0">Card Type</label>
+                <input #cardType type="text" class="form-control" style="height: 25px">
+              </div>
+              <div class="col-sm-4 gy-1">
+                <label for="titleFlag" class="form-label my-0">Title Flag</label>
+                <input #titleFlag type="text" class="form-control" style="height: 25px">
+              </div>
+              <hr class="my-2">
+            </div>
+          </form>
+        </div>
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <div class="row pi-draggable">
+            <div>
+              <button type="submit" class="w-100 btn btn-info btn-lg my-4" (click)="clearScreen()">Clear Screen</button>
+            </div>
+          </div>
+          <li class="list-group-item d-flex justify-content-between lh-sm border-info border-2 rounded-3" style="background-color: rgb(245, 245, 219);">
+            <div class="row" style="text-align: center">
+              <div>
+                <h6 class="d-flex mb-3">
+                  <label #readerNameStatus class="form-check-label"></label>
+                </h6>
+                <h6 class="d-flex mb-3">
+                  <label class="switch mx-3">
+                    <span #ledCardStatus class="slider round"></span>
+                  </label>
+                  <span class="text" style="color: orange" #cardStatus (click)="getAutoReadOptions()">Card Status: Unknown</span>
+                </h6>
+              </div>
+              <h5 class="d-flex mx-0">
+                <input #chkAutoRead type="checkbox" class="form-check-input mx-3" (click)="setAutoReadOptions()" checked="checked">
+                <label class="form-check-label text-info fw-bold" for="chkAutoRead">Auto Read</label>
+              </h5>
+              <div class="g-3 my-0" style="text-align: center">
+                <input #chkAutoNIDNumber type="checkbox" class="form-check-input" (click)="setAutoReadOptions()">
+                <label class="form-check-label text-info" for="chkAutoNIDNumber" id="lbAutoNIDNumber">ID</label>
+                <input #chkAutoNIDText type="checkbox" class="form-check-input" checked="checked" (click)="setAutoReadOptions()">
+                <label class="form-check-label text-info" for="chkAutoNIDText" id="lbAutoNIDText">Text</label>
+                <input #chkAutoAText type="checkbox" class="form-check-input" (click)="setAutoReadOptions()">
+                <label class="form-check-label text-info" for="chkAutoAText" id="lbAutoAText">AText</label>
+                <input #chkAutoNIDPhoto type="checkbox" class="form-check-input" checked="checked" (click)="setAutoReadOptions()">
+                <label class="form-check-label text-info" for="chkAutoNIDPhoto" id="lbAutoNIDPhoto">Photo</label>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm border-info my-4 border-2 rounded-3" style="background-color: rgb(245, 245, 219);">
+            <div class="row">
+              <h5 class="d-flex mx-2">
+                <label class="form-check-label text-info fw-bold">Manual Read</label>
+              </h5>
+              <div class="g-3 my-0" style="text-align: center">
+                <input #chkNIDNumber type="checkbox" class="form-check-input my-2">
+                <label class="form-check-label text-info my-2" for="chkNIDNumber">ID</label>
+                <input #chkNIDText type="checkbox" class="form-check-input my-2" checked="checked">
+                <label class="form-check-label text-info my-2" for="chkNIDText">Text</label>
+                <input #chkAText type="checkbox" class="form-check-input my-2">
+                <label class="form-check-label text-info my-2" for="chkAText">AText</label>
+                <input #chkNIDPhoto type="checkbox" class="form-check-input my-2" checked="checked">
+                <label class="form-check-label text-info my-2" for="chkNIDPhoto">Photo</label>
+              </div>
+              <div class="col">
+                <button #btngetreaderlist  class="w-100 btn btn-info btn-lg text-white fw-bold" type="submit" (click)="getReaderlist()" id="btngetreaderlist">Get Reader List</button>
+                <select #listReadername class="form-select" name="form-select">
+                  <option value="">Reader not found</option>
+                </select>
+                <button class="w-100 btn btn-lg my-2 text-white fw-bold" style="background-color: rgb(7, 156, 7); height: 70px" type="submit" (click)="readNIDCard()">Read Thai ID Card</button>
+              </div>
+            </div>
+          </li>
+          <div>
+            <li class="list-group-item d-flex justify-content-between lh-sm my-4 border-2 rounded-3" style="background-color: rgb(245, 245, 219);">
+              <div class="row g-5">
+                <div class="col-md-12">
+                  <button class="w-100 btn btn-info btn-lg my-1" type="submit" (click)="updateLicenseFile()">Update License File</button>
+                  <button type="submit" class="w-100 btn btn-info btn-lg my-1" (click)="getReaderID()">Reader ID</button>
+                  <button type="submit" class="w-100 btn btn-info btn-lg my-1" (click)="getSoftwareInfo()">Software Info</button>
+                  <button type="submit" class="w-100 btn btn-info btn-lg my-1" (click)="getLicenseInfo()">License Info</button>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-muted text-center text-small">
+      <p class="mb-1">© 2017–2023 R&D Computer System Co., Ltd.</p>
+    </footer>
+  </div>
+  
